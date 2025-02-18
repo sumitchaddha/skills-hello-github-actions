@@ -2,7 +2,7 @@ name: JobConditional
 on: [push]
 jobs:
   hello-world:
-    if: github.repository == 'octotat/octo-repo'
+    if: github.repository == 'sumitchaddha/skills-hello-github-actions'
     runs-on: ubuntu-latest
     steps: 
       - name: "Hello World"
