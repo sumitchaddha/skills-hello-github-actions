@@ -11,8 +11,8 @@ on:
         description: 'Type of greeting'
         required: true
         type: string
-      data:
-        description: 'Base64 encoded content of a file'
-        required: false
-        type: string
+      #data:
+        #description: 'Base64 encoded content of a file'
+        #required: false
+        #type: string
         
