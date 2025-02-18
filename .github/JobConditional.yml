@@ -1,0 +1,14 @@
+name: JobConditional
+on: [push]
+jobs:
+  hello-world:
+    if: github.repository == 'octotat/octo-repo'
+    runs-on: ubuntu-latest
+    steps: 
+      - name: "Hello World"
+        run: echo "Hello World!"
+  goodbye-world:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: "GoodBye World"
+        run: echo "GoodBye World!"   
