@@ -15,4 +15,10 @@ on:
         #description: 'Base64 encoded content of a file'
         #required: false
         #type: string
-        
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet the person
+        run: echo "${{ github.event.inputs.greeting }} ${{ github.event.inputs.name }}!"
